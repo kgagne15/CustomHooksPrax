@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import uuid from "uuid";
 import axios from "axios";
+import useAxios from "./hooks/useAxios";
 import PlayingCard from "./PlayingCard";
 import "./PlayingCardList.css";
 
+
+//had to copy solution for last two hooks
 /* Renders a list of playing cards.
  * Can also add a new card at random. */
 function CardTable() {
@@ -28,6 +31,10 @@ function CardTable() {
     </div>
   );
 }
+
+
+
+
 
 CardTable.defaultProps = {};
 
